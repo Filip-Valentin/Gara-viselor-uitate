@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gara viselor pierdute</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f0f0; 
+            margin: 0;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 800px; 
+            margin: 0 auto;
+            padding: 20px; 
+            background-color: white; 
+            border-radius: 8px; 
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            text-align: right;
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: left; 
+            font-size: 15px;
+            margin: 20px 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .audio-button {
+            margin: 0 10px;
+            padding: 9px 15px;
+            background-color: #dd985c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="button-container">
+            <button class="audio-button" onclick="playAudio()">Melodie de fundal</button>
+            <button class="audio-button" onclick="pauseAudio()">Pauză</button>
+        </div>
+
+        <audio id="audio" loop>
+            <source src="C.mp3.mp3" type="audio/mpeg">
+            Browser-ul tău nu suportă elementul audio.
+        </audio>
+
+        <h1>Gara viselor pierdute</h1>
+        <h2>de Filip Valentin</h2>    
+
+
+        <p>
+            “Eliza Ionescu este numele meu, fosta Eliza Drumeag și am douăzeci și șapte de ani. Nu știu cine va citi aceast bilețel, nu știu nici dacă o să-l scriu de fapt. De câteva luni nu știu foarte multe, un munte stă în spatele meu, iar crestele lui îmi zgârie creierul și îmi îngheață sufletul. Stau pe peronul numărul patru, vântul bate cu putere fulgii înghețați pe fața mea palidă. Am găsit acest șervețel în geantă și un sentiment profund m-a făcut să înșir câteva cuvinte, alături de gândul că mâna-mi va fi prea înghețată pentru a o putea face mai târziu, vântul e tăios și rece.
+ </p>
+<p>
+  Sunt căsătorită, dar nu doar prin acel act ridicol, dar indispensabil, sunt căsătorită și legată sufletește de acest om pe care îl aștept. Îl aștept, iar astăzi va veni. Sunt în gara de sud din Ploiești, ora 19:20 sau 20:33, nu știu cu certitudine, ceasul meu de la mâna dreaptă s-a stricat acum câteva zile și nu am putut să-l repar din lipsa banilor, iar ceasornicul ce se află în interiorul gării este mult prea departe și eu sunt mult prea înfrigurată. Dar astăzi va veni, astăzi îl voi revedea, acest gând îmi încălzește sufletul din cap și până în vârful degetelor din bocanci, lovind cu piciorul banca din fața mea pentru a-mi putea resimți laba piciorului.
+</p>
+<p>
+   Suntem în anul 1943, ianuarie târziu. Este a treia zi de când sunt aici sau poate doar a doua, dar cred de fapt că este prima. Unii oameni drăguți mi-au oferit ceai și covrigi, calzi și moi, pe care i-am acceptat cu drag. Stau de ceva timp pe această banchetă din lemn, privesc calea ferată și le zâmbesc tuturor celor ce coboară din trenurile lungi precum un râu, iar timpul trece în neștire atunci când privesc în gol.
+ </p>
+<p> 
+ El a fost luat și înrolat la sfârșitul lui ’40, 23 decembrie, cum aș putea să uit? A fost dus până de după Prut, asta mi-au spus scrisorile de la el. L-am cunoscut într-un mic local cu doi ani și jumătate înainte de acel moment groaznic. Eu și prietena mea, Tatiana, am hotărât să ieșim în unul dintre micile locuri în care poți să ieși după ora șapte seara, pe data de 9 ianuarie, de sfântul martir Iulian. Tatiana este prietena mea din copilărie, acum studiază în cadrul facultății de drept din capitală, o perioadă foarte stresantă din viața ei, însă în acea seară a hotărât să lase toate problemele legislative de după un pahar de vodcă ieftină. 
+</p>
+<p>  
+ Nici eu nu treceam prin cea mai fericită perioadă a mea, tata a fost adus mort acasă în urma unui accident de muncă la fabrica de cherestea, iar mama era distrusă. Muncea de dimineața până seară pentru a ne putea crește, pe mine alături de cei nouă frați ai mei. Acest număr nouă m-a urmărit toată viața, de după numărul fraților, am fost a noua admisă la studii superioare la Viena în muzică, am fost născută pe data de 9 iulie și într-o zi de nouă aveam să-l cunosc pe el. În acea seară eram îmbracată cu o rochie roșie și un pardesiu negru. Dezbăteam alături de Tatiana toate secretele vieții noastre, de la primul moment în care am împărțit o păpușă, până în tainele cărților englezești de care am făcut rost și pe care le savurez îl serile friguroase.
+</p>
+<p>   
+La un moment dat, trompetele trupei ce încântau audiența aveau să plângă alături de vioară și pian o lucrare divină pot spune, atunci a fost prima dată când o astfel de compoziție m-a facut să-mi curenteze întregul corp. Am început să zâmbim amândouă până la urechi și să râdem zgomotos de fericirea acelei seri, ciocnind paharele de vodcă spre lipsa noastră de diplomație. După câteva momente un domn îmbrăcat cu pantofi și pantaloni negri, o camașă gri în dungi albe, bretele și o bască de aceași culoare cu camasă mi-a cotropit ochii până în suflet cu un zâmbet firav. Avea chipul asemeni statuilor antichității grecești, proaspăt bărbierit. Mi-a zâmbit așezându-se alături și a spus:
+</p>
+<p>  
+ -Ce fac două doamne într-un loc ca acesta?
+   </p>
+<p>
+-Ascultăm muzică, nu-i așa că este încântătoare? adaug eu plină de încredere falsă.
+</p>
+<p>
+   -Este cu adevărat o orchestră încântătoare, a adăugat necunoscutul meu.
+</p>
+<p>
+   Seara a continuat cu încă câteva pălăvrăgeli despre lieratură, muzică și politică. Am aflat înclinațiile sale culturale și despre cum îți dorește să călătorească până la Roma pentru o afacere secretă. A spus foarte multe, dar nu-mi amintesc întrutotul, eu îl admiram cum gesticula și acorda cuvintele parcă simultal cu pianul din surdină.
+</p>
+<p>   
+După două ore de conversație avea să-și întindă mâna, degetele sale lungi chemându-mă cu însuflețire la un dans. Viorile suspinau amorul sufletelor fragile pe care eu, alături de necunoscutul meu, aveam să le pătăm cu lacrimile sincere ale fiecăruia.
+</p>
+<p>  
+ M-a tras către mijlocul localului, eram alături de încă câțiva, dar noi eram cu siguranță piesa de muzeu a muzeului viselor noastre și a altora. Avea o țigaretă între buzele sale crăpate, dar nu era un obstacol în a mă învârti de după brațul său sau a-mi strânge talia cu palma sa delicată.
+</p>
+<p>  
+ Oamenii aplaudau, alții fluierau, alții tăceau spre frumusețea energiei pe care scânteia din ochii noștri o emana când se intersecta sub lumina lămpilor, prin notele înalte ale pianului, pe cale le ocoleam într-un vals ce se termina în fumul care atingea tavanul; scena era a noastră, localul era al nostru, timpul și spațiul ne aparținea, dar oare el îmi va aparține? Oare eu voi fi a lui? Am dansat poate o oră, poate doar jumătate de ceas, dar au fost minute de respirație sufletească.
+</p>
+<p>  
+ -Lasă-mă să te conduc acasă, Eliza! mi-a șoptit chipul sculptat.
+</p>
+<p>   
+Am încuviințat din cap, zâmbind. Acela a fost momentul în care m-am desparțit de Tatiana, mulțumindu-i.
+   Am vorbit sub luna plină, despre viitorul meu muzical pe care mi-l doresc cu ardoare, iar el despre cariera sa de dramaturg și prozator. Am parcurs un drum ocolitor până în dreptul locuinței mele, drum ce a fost mult mai lung și care ne-a arătat o bancă din lemn ce ne striga prezența, pe care am stat și am dezbătut secretele universului. Luna ne-a fost martor multor momente, iar soarele ne-a iubit primul sărut.
+</p>
+<p>   
+Am contiuat să ne trimitem scrisori, iar când eu am pășit pe pământul Austriei, aveam să îl am alături pe necunoscutul din seara aceea, ce își sacrifica economiile pentru viitorul meu muzical, ținându-mă strâns de brațul său. Banii erau puțini, eram săraci, câștiga mărunțiș pentru proza și piesele sale de teatru vândute diferitor ziare, dar eram cei mai bogați dintre săraci. Ne iubeam foarte mult, iar micuțul nostru garaj închiriat devenise raiul pentru noi. Am vizitat toată Viena pe jos și am văzut atât de multe răsărituri și apusuri. Când a venit data de nouă iulie, ziua în care aveam să împlinesc douăzeci și șase de ani, a cumpărat două bilete la teatru, un cadoul senzațional. Am mers plângând la brațul său spre scenetă, lacrimi de fericire și tristețe îmi invadau obrajii blânzi privind-i aceași pantofi, acum cusuți și rupți pe alocuri, pe care i-a avut și la prima plimbare de pe strazile Ploieștiului în care ne-am cunoscut.
+</p>
+<p>   
+ Am petrecut lunile numărând, printre trandafiri și poezii de dragoste, dăruindu-ne cuvintele ce ne pictau sufletul. Am numărat zilele dormite într-un garaj închiriat, eu pe o targă medicală, acoperită cu pături și perne, ce-mi ținea loc de pat, iar necunoscutul meu stând pe alte câteva pături ce acopereau betonul de lângă picioarele metalice ale patului meu.
+</p>
+<p>   
+Cele două ierni petrecute astfel aveau să îi declanșeze o afecțiune la nivelul plămânilor, tușea foarte gălăgios, fața sa era galbenă, iar ochii îi erau injectați de un roșu precum vinul. Nu ne-am permis spitalizarea în Viena, am stabilit să plecăm înapoi în România, dar în urma insistențelor lui doar șase luni mai târziu, după ce am terminat studiile.
+</p>
+<p>  
+ Primii pași pe pământurile țării noastre îi faceam la sfârșitul lui ’39. Costurile spitalizarii aveau să fie uriașe, dar postul prins la Opera Română din București avea să mă ajute în a-l sprijinii financiar. Timp de două luni și jumătate a fost internat, am crezut că îl voi pierde, în prima lună starea sa era din ce în ce mai rea, am plâns aproape în fiecare zi la ușile spitalelor, privind un chip ce nu-mi amintea de el. Dimineața și după-amiaza eram la spital, seara eram la orchestră, iar noaptea eram singură în patul meu din capitală, aceasta mi-a fost viața celor două luni.
+</p>
+<p>   
+Îmi era gândul constant al vieții mele, era cârmuitorul ce mi-a dat tot ce aveam, iar eu nu puteam să îi mai ofer nimic.
+</p>
+<p>   
+-Vă implor să îi spuneți că îl iubesc, le spuneam plângând doamnelor din cabinet.
+</p>
+<p>   
+-O să o facem, îmi spuse intinzându-mi o bucată de hârtie mototolită ce îi aparținea lui.
+</p>
+<p>   
+Am citit tremurând rândurile zgâriate cu cerneală neagră.
+</p>
+
+<p>
+<< Te voi iubi și în ziua
+</p>
+<p>
+                                                   Când soarele va apune pentru ultima dată,
+</p>
+<p>
+                                                   Dar care va răsări zâmbindu-ți
+</p>
+<p>
+                                                   Pe banca tuturor vieților mele.>>
+</p>
+<p>
+
+
+   Zilele cenușii aveau să se lumineze treptat, avea să se simtă mai bine și să se întoarcă ținându-mă de braț în primăvara anului 1940. Economisisem suficienți bani pentru a ne permite un apartament modest în partea de sud a orașului.
+</p>
+<p>  
+ A urmat o perioadă frumoasă, în care am mobilat apartamentul, el a început din nou să scrie și ne aflam în una dintre acele momente alea vieții când inimile a doi oamenii aveau să bată simultan foarte repede și în care toate venele zvâcnesc.
+</p>
+<p>  
+ -Sunt însărcinată, am spus privindu-l.
+ </p>
+<p>  
+Stătea la masa sa de scris, bătând paginile manuscrisului său, pregătea o carte ce va descoase tainele operelor lui Shakespeare, ținând o țigaretă pe jumătate fumată între buze.
+</p>
+<p>   
+-Poftim? Este adevărat ce-mi spui? 
+</p>
+<p>  
+ -Da, spun eu lăcrimând.
+</p>
+<p>
+   Necunoscutul meu avea să-și scape țigara pe podeaua din lemn și să-mi sară în brațe plângând ca un copil și strigând: “Sunt tata!”
+</p>
+<p>   
+A urmat cererea în căsătorie și nunta noastră restrânsă la care am dansat în mijlocul mulțimii. A fost una dintre cele mai frumoase zile din viața mea, ne-am promis că vom dansa o viață înpreună, apoi vom trece în următoarea și următoarea și tot așa până în absolutul infinit. Aveam să ne iubim pentru totdeauna.
+</p>
+<p>   
+Însă această perioadă fără griji avea să se termine peste mai puțin de un an, într-o zi mohorâtă din decembrie, când a primit telegrema ce îl înrola în corpul Armatei Române.
+</p>
+<p>  
+ Cu câteva zile până în Crăciun, pe data de 23 decembrie, aveam să-l văd îmbrăcat în verde, cu bocanci negri și chipiul așezat strâmb peste părul său des. Aveam să îi așez nenorocitul acela de chipiu și să-l sărut pentru ultima dată, plângând. Un glonț avea să-mi sfâșie inima, un val avea să mă înece și focul cel mai crunt avea să-mi ardă fiecare parte a sufletului cu gândul iarăși prezent că îl voi pierde. Necunoscutul meu iubit avea să-mi sărute pântecul deja vizibil și să-mi spună:
+</p>
+<p>   
+-Sunteți curajoși până mă întorc, da?
+</p>
+<p>   
+-Da, am spus de parcă gura îmi era încleștată.
+</p>
+<p>   
+Aveam să îi văd ultimul zâmbet, ultima sclipire din ochi și ultima respirație dăruindu-mi o pălărie galbenă pentru un nou-născut. Am promis că i-o voi dărui copilului nostru și că va avea numele Iulian sau Iuliana.
+</p>
+<p>   
+Trenul plecă, alergam cu lacrimile revărsâdu-se în urma mea privind ușa pe care acesta a urcat până la geamul unde aveam să-l văd pentru ultima oară, strigându-ne:
+</p>
+<p>   
+-Te iubesc, draga mea!
+</p>
+<p>   
+-Te iubesc, dragul meu!
+</p>
+<p>
+   Mi-am ținut promisiunea, deoarece la începutul anului 1941, la data de 24 februarie avea să se nască fiul nostru Iulian. Am continuat să cânt la orchestra din București, dar să și îmi petrec timpul alături de băiatul nostru și de bunica lui, mama mea, care are foarte multă grijă de el, locuim în prezent pe strada “Florin Carpen”, nr 114 din Ploiești.
+</p>
+<p>  
+ Acest scurt mesaj vreau să ți-l transmit ție, dragul meu! Timp de trei ani, în fiecare zi colindam poșta locală. Am fost martora distrugerii raționamentului meu de fiecare dată când scârțâitul ruginit al căsuței poștale a descolig trista lipsă a prezenței tale, scrisorile din partea ta încetând să apară după primăvara lui 1942. Am început să consum mult alcool, aveam să plâng și să suspin, să lovesc cu pumnii și picioarele acea cutie metalică nenorocită, până într-o zi.
+</p>
+<p>
+   Era data de 14 ianuarie, 1943, când cutia poștală avea să aibă o mică scrisoare roasă de șobolani. În ea erau doar câteva cuvinte mânjite cu cerneală.
+
+</p>
+<p>                                                         
+     << Am fost împușcat în picior
+
+</p>
+<p>
+                                                          E tăiat, vin acasă pe ian. 20.
+</p>
+<p>
+                                                                              Al tău, iubit. >>  
+
+</p>
+<p>
+
+    În timp ce scriu aceastră scrisoare vreau să-ți mărturisesc că îmi este foarte dor de tine, de zâmbetul și suflarea ta caldă. De fiecare dans al nostru și fiecare moment în care îmi spui cuvinte dulci. Îmi e dor de seara când ne-am cunoscut și de săruturile tale lungi, de buzele, ochii și chipul tău mi-e dor. Îmi e dor de încrederea ta, de atitudinea și veselia pe care mi-ai adus-o. Îți mulțumesc pentru ce însemni, pentru ce mă faci să simt și pentru că mi-ai schimbat viața. Tremur și plâng scriindu-ți aceste cuvinte, mâna mea este rece și imobilă, dar vreau să-ți mărturisesc totul și să îți dăruiesc acest bilet când te voi privi iarăși și te voi săruta.
+</p>
+<p>  
+ Iulian e bine, vorbește mult, ca tine. Se dă mereu în spectacol în fața mamei, făcând tot felul de scenete amuzante, poate că va deveni actor, poate că va fi și el scriitor, ca tine. Aștept momentul în care îl vom duce amândoi la grădiniță, apoi vom mânca toți înghețată sau orice altceva.
+</p>
+<p>  
+ O... dragul meu iubit... Îmi doresc să fii aici, să mă săruți și să-mi zici iar că va fi totul bine. Vreau să vezi cât de mult semeni cu Iulian. O, doamne... îmi e atât de dor de tine...
+</p>
+<p>   
+Dar astăzi vii, nu? Ne vom revedea, așa-i? Și vom dansa iar? Chiar de nu mai poți, vom face noi ceva, nu? Mereu avem soluții...
+</p>
+<p>  
+ O... dragule... te iubesc atât de mult... “
+</p>
+<p>  
+ Fulgii de zăpadă ce erau învârtiți și rostogoliți de rafalele de vânt rece se așezau tăcuți peste gara de Sud, mormane mari de zăpadă se așezau peste acoperișul și șinele de cale ferată ce trosneau de ger și viscol. Cerul era gri, împânzit de nori groși prin care luna nu se putea strecura pentru a lumina străzile și gara.
+</p>
+<p>  
+ Unul dintre paznicii de noapte stătea așezat pe un scaun tapițat, sprijinit de peretele colibei sale ce îl ascundea de vremea acerbă. Era un domn de statură medie, grăsan, în vârstă de cincizeci și nouă de ani. Avea o mustață alba, pe care o scutura în momentul în care nu găsea răspunsul rebusului său din ediția de dimineață, pe care o primea prematur prin surse familiale ale editurii, joc la care se înroșea zdravăn în obraji săi cărnoși.
+</p>
+<p>  
+ -Oamenii ăștia sunt tâmpiți, pun cele mai idioate întrebări în ziarele astea de toată jena! spuse bărbatul aruncându-l de perete și privind pe ferestruica ce ducea spre peron.
+</p>
+<p>   
+Acesta privi încruntat, suflă aer cald peste fereastra înghețată și o șterse cu mâneca gecii sale. Cu greu, în îndepărtatul peron plin cu zăpadă, de pe o siluetă înaltă și zveltă alunecă printre palme pardesiul său negru, mergând spre șinele groase din oțel. 
+</p>
+<p>   
+-După ce că aflu ca trenul ce trebuia să ajungă acum câteva ore a fost bombardat ieri de ruși, urmează să-mi trecă prin gară altul plin cu cărbuni ce riscă același scenariu, doar de o nebună nu-mi stătea mie capul, spuse paznicul deschizându-și ușa și mergând către peron cu bărbia înghesuită în piept.
+</p>
+<p>   
+ Zăpada strălucii de un alb gălbui în timpul trecerii luminii farurilor marfarului ce pufăia zgomotos, galopând prin nameții depuși pe șine, către rampa cu numărul patru.
+</p>
+<p>   
+-Doamnă, vă rog să vă îndepărtați de marginea peronului! striga bărbatul, pășind alert către aceasta, cu pași largi, îngreunat de zăpadă, dar fără a primi un răspuns.
+</p>
+<p>   
+Chipul de lut pășea timid către șinele de tren, bolborosind prin aerul rece, aburii înălțându-se agale către cer.
+</p>
+<p>  
+ -Vă rog, opriți-vă! Nu faceți o nesăbuință!
+</p>
+<p> 
+ Acesta se înroși precum roșiile de pe tarabele țăranilor în săptămâna recoltei. Trenul șuiera și tuși fumul negru, spărgând țurțurii de pe streașinile gării. Paznicul ajunse la o distanță redusă față de femeie în momentul în care aceasta pășii cu vârfurile pe marginea din beton a peronului.
+</p>
+<p>  
+ -Vă rog, opriți-vă! Luați pardesiul, ați făcut hipotermie!
+</p>
+<p>  
+ Eliza Ionescu își întoarse privirea către omul care o strigase, cu ochii umezi și obrajii roșii,
+</p>
+<p>  
+ -A venit, după atât de mult timp a venit! O… doamne… credeam că nu te voi mai vedea vreodată, scumpule! spuse fata făcând un pas către paznicul ce intră sub acoperișul gării.
+</p>
+<p>   
+-Doamnă, vă rog să stați pe loc! Vine marfarul!
+</p>
+<p>  
+ -Iubitule, te rog vino acasă, am nevoie de tine! Nu mai pot trece prin toate! Nu mai sunt curajoasă!
+</p>
+<p>   
+Fata își șterse lacrimile de pe fața sa înghețată, apoi, analiză trist chipul bărbatului din fața sa. Marfarul intră în gară și se apropie ca un fulger de scena teatrului tragic, fulgii de zăpadă fiind împinși de aerul ce lovea trenul.
+</p>
+<p>   
+-Stai, tu nu esti el! Cine esti? Te rog, lasă-mă să mai stau aici, trebuie să apără în scurt timp! strigă fata întinzându-și mâinile și pășind mărunt înapoi.
+</p>
+<p>   
+-Vă rog, stați…
+</p>
+<p>   
+Piciorul fetei alunecă pe moina depusă pe marginea peronului și fu împinsă pe spate către șinele de tren. Mâinile sale se roteau precum aripile unui porumbel în bătaia blândă a brizei mării, ochii acesteia îl priviră pe paznicul care încercă să o prindă de mână, dar care nu reuși, apoi lumina farurilor trenului o orbiră. Sunetul șinelor înghețate răsună din pricina țipătului fetei care fu lovită de tren și aruncată sub acestea.
+</p>
+<p>  
+ O liniște morbidă se așeza în timp ce paznicul priviră vagoanele nesfârșite ale marfarului cum tranversau gara plină de zăpadă. Ridică pardesiul ei negru, îl scutură și găsiră un șervețel mototolit, pe care erau scrise următoarele: “Te aștept, iubindu-te!”.
+</p>
+<p> 
+  Acesta pășii apăsat peste betonul umed, ținând paltonul subțire peste antebraț, oftând, se îndreptă spre partea dreaptă a constucției, lângă departementul pentru elibererea biletelor. Alături se afla o cabină de telefon fix pentru apeluuri de urgență.
+  </p>
+        <p>
+            Ieșind din cutia metalică, frecându-se cu podul palmei peste ochii săi umezi, se apropie de departamentul obiectelor pierdute, în care agăță pardesiul de un cuier din lem și aruncă scrisoarea într-o cutie plină cu scrieri ce nu au ajuns la destinatar. Desupra tuturor celorlalte scrisori cu povești și vise uitate, cu gânduri și pacrimi sărate căzute, ce se amestecau cu cerneaza proaspătă, se aflau două bucăți de hârtie pătate și rupte, un șervețel al vieții Elizei și o scrisoare intitulată: “Am supraviețuit bombelor, vin peste trei zile din București. Te iubesc și îmi e dor de tine, dar te voi vedea, însfârșit. Necunoscutul tău.”
+        </p>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+
+        function pauseAudio() {
+            var audio = document.getElementById("audio");
+            audio.pause();
+        }
+    </script>
+
+</body>
+</html>
